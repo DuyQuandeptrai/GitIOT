@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="action-history.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="details">
+        <div class="recentOrders">
+            <div class="cardHeader">
+                <h2>History Action</h2>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search...">
+                        <i class=" fas fa-solid fa-magnifying-glass"></i>
+                    </label>
+                </div>
+
+                <div class="sort">
+                    
+                    <select class="sort-bar">
+                        <option value="" disabled selected hidden>Search by...</option>
+                        <option value="1">Search by ID</option>
+                        <option value="2">Search by Device</option>
+                        <option value="3">Search by Action</option>
+                        <option value="4">Search by Date</option>
+                    </select>
+                </div>
+
+                <div class="sort">
+                    <i class=" fas fa-solid fa-up-down"></i>
+                    <select class="sort-bar">
+                        <option value="" disabled selected hidden>Sort by...</option>
+                        <option value="1">Sort by ID</option>
+                        <option value="2">Sort by Device</option>
+                        <option value="3">Sort by Action</option>
+                        <option value="4">Sort by Date</option>
+                    </select>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Device</td>
+                        <td>Action</td>
+                        <td>Date</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Fan</td>
+                        <td>ON</td>
+                        <td>26/1/2024 17:31:23</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Light</td>
+                        <td>ON</td>
+                        <td>26/1/2024</td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Fan</td>
+                        <td>OFF</td>
+                        <td>26/1/2024</td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Fan</td>
+                        <td>ON</td>
+                        <td>25/1/2024</td>
+                       
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Fan</td>
+                        <td>OFF</td>
+                        <td>26/1/2024</td>
+                       
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>Fan</td>
+                        <td>ON</td>
+                        <td>26/1/2024</td>
+                      
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>Light</td>
+                        <td>OFF</td>
+                        <td>25/1/2024</td>
+                       
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>Fan</td>
+                        <td>OFF</td>
+                        <td>25/1/2024</td>
+                      
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>Light</td>
+                        <td>ON</td>
+                        <td>25/1/2024</td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td>Fan</td>
+                        <td>ON</td>
+                        <td>25/1/2024</td>
+                        
+                    </tr>
+                 
+                </tbody>
+            </table>
+            <ul class="pagination">
+                <li><u>1</u></li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>...</li>
+                <li>10</li>
+              </ul>
+        </div>
+        
+    </div>
+    <div id="menuContainer"></div>
+    <script src="nav.js"></script>
+</body>
+</html>

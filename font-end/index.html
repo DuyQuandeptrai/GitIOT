@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <div id="menuContainer"></div>
+
+        <div class="header">  
+            <div class="sensor" > 
+                <h2>Temperature <i class="fa-solid fa-temperature-low"></i></h2>
+                <div id="temperatureValue">       
+                    <p class="value"></p>             
+                </div> 
+            </div> 
+
+            <div class="sensor">
+                <h2>Humidity <i class="fa-solid fa-cloud-sun"></i></h2>
+                <div id="humidityValue">
+                    <p class="value"></p>
+                </div>
+            </div> 
+
+            <div class="sensor">
+                <h2>Light <i class="fa-solid fa-lightbulb"></i></h2>
+                <div id="lightValue">
+                    <p class="value"></p>
+                </div>
+            </div>            
+        </div>
+
+        
+        <div class="container">
+            <div class="chart">
+                <div class="titleChart"><b>Chart</b></div>
+                <canvas id="chartInformation"></canvas>
+            </div>
+            <div class="OnOff">
+                <div class="light">
+                    <img id="lightimg" src="img/off.jpg" style="width:50px">
+                    <br>
+                    <br>
+                    <button class="on-btn" onclick="document.getElementById('lightimg').src='img/on.jpg'">ON</button>
+                    <button class="off-btn" onclick="document.getElementById('lightimg').src='img/off.jpg'">OFF</button>
+                </div>
+                
+                <div class="fan">
+                    <img id="fanimg" src="img/fanoff.gif" style="width:100px">
+                    <br>
+                    <button class="on-btn" onclick="document.getElementById('fanimg').src='img/fanon.gif'">ON</button>
+                   
+                    <button class="off-btn" onclick="document.getElementById('fanimg').src='img/fanoff.gif'">OFF</button>
+                </div>
+            </div>
+        </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="scripts.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>

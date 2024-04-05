@@ -1,0 +1,113 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.details {
+    
+    width: 80%;
+    margin: 50px 50px 50px 50px ; /* Thêm auto để căn giữa theo chiều ngang */
+    position: fixed;
+}
+
+.recentOrders {
+    background-color: #e5e5e5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-left: 17%;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cardHeader h2 {
+    font-size: 24px;
+    color: #1848f5;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.search i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #666;
+    cursor: pointer;
+}
+
+.sort {
+    position: relative;
+}
+
+.sort-bar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.sort i{
+    margin-right: 10px;
+    color: #666;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #ff7676;
+}
+
+thead tr {
+    border-bottom: 2px solid #e82626;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+     background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f77c7c;
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+    cursor: pointer;
+    color: blue;
+  }

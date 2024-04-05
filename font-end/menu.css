@@ -1,0 +1,78 @@
+/* menu.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+label #btn-menu,label #cancel{
+    position: absolute;
+    cursor: pointer; 
+}
+#check{
+    display: none;
+}
+label #btn-menu{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+}
+label #cancel{
+   z-index: 1111;
+   left: -195px;
+   top: 17px;
+   font-size: 30px; 
+   transition: all .5s ease;
+}
+#check:checked ~ .nav{
+    left: 0;
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+    
+}
+.nav{
+    align-items: center;
+    position: fixed;
+    left: -300px;
+    width: 250px;
+    height: 100%;
+    background: #ccc;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+.nav header{
+    font-size: 24px;
+    color: rgb(255, 52, 52);
+    text-align: center;
+    line-height: 70px;
+    user-select: none;
+}
+.nav ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: black;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255, 255, 1);
+}
+ul li:hover{
+    padding-left: 10px;
+}
+.nav ul li i{
+    margin-right: 10px;
+}
+.nav p{
+    font-size: 35px;
+    margin-left: 550px;
+}

@@ -1,0 +1,96 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.sensor {
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 2px 8px 10px rgba(228, 228, 228, 0.1);
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    
+}
+#temperatureValue{
+    background-color: rgb(253, 66, 66);
+}
+#humidityValue{
+    background-color: rgb(71, 71, 255);
+}
+#lightValue{
+    background-color: rgb(250, 164, 60);
+}
+.value {
+    font-size: 24px;
+}
+.titleChart{
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+}
+.chart{
+    width: 60%;
+    height: 500px;
+    margin-left: 100px;
+    background: white;
+    border-radius: 10px;
+}
+
+.container {
+    display:flex;
+    margin-top: 40px;
+}
+
+.OnOff {
+    margin-left: 90px;
+    margin-top: 100px;
+    
+}
+.on-btn.active {
+    background-color: #4caf50; /* Màu nền khi nút ON được kích hoạt */
+    color: #fff; /* Màu chữ khi nút ON được kích hoạt */
+  }
+  
+  .off-btn.active {
+    background-color: #f44336; /* Màu nền khi nút OFF được kích hoạt */
+    color: #fff; /* Màu chữ khi nút OFF được kích hoạt */
+  }
+.light {
+    
+    width: 300px;
+    height: 130px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.fan {
+    width: 300px;
+    height: 130px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
